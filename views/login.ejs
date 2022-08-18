@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs")%>
+<div class="container">
+<%- include("./partials/navbar.ejs")%>
+
+<h1>Login Page</h1>
+<hr>
+
+<form method="post">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" required id="exampleInputEmail1"  name="email">
+      
+         <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" required id="exampleInputPassword1" name="password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="changepassword mt-4"><a href="/changepassword">Change Password</a></div>
+  </form>
+</div>
+<%- include("./partials/footer.ejs")%>
+

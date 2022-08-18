@@ -1,0 +1,26 @@
+<%- include("./partials/header.ejs")%>
+<div class="container">
+<%- include("./partials/navbar.ejs")%>
+
+<h1>Registration Page</h1>
+<hr>
+
+<form method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Username</label>
+        <input type="text" class="form-control" required id="name" name="name" >
+
+    <div class="mb-3">
+      <label for="exampleInputmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control"  required id="exampleInputEmail1" aria-describedby="emailHelp"  name="email">
+      
+         <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" required id="exampleInputPassword1"  name="password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<%- include("./partials/footer.ejs")%>
+
